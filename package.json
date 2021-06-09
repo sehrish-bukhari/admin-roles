@@ -1,0 +1,19 @@
+{
+  "name": "admin-roles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "Cypress run",
+    "cypress:open": "cypress open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "7.4.0"
+  },
+  "devDependencies": {
+    "cypress-xpath": "^1.6.2"
+  }
+}
