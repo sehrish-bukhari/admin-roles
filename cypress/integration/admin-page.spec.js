@@ -1,21 +1,21 @@
 /// <reference types ="cypress"/>
 
-import { navigate, emailField, addAdmin, roleField, roleselector, saveButton, editAdmin, deleteAdmin, pageTab, addPage, pageName, readOnlyFeatures, selectReadOption, deleteReadOnlyFeatures, fullFeature, readOnlyFeaturesDropdown, fullFeatureDropdown, selectFullOption, addSubPage, editPage, savePage, deletepage, deleteFromEdit } from "./page-objects/add-admin"
-import { url } from "./url-file.spec";
-
+import { emailField, addAdmin, roleField, roleselector, saveButton, editAdmin, deleteAdmin, pageTab, addPage, pageName, readOnlyFeatures, selectReadOption, deleteReadOnlyFeatures, fullFeature, readOnlyFeaturesDropdown, fullFeatureDropdown, selectFullOption, addSubPage, editPage, savePage, deletepage, deleteFromEdit, redirectToAdminTab, navigate } from "../page-objects/add-admin"
 
 
 describe("it should automate admin tab page", () => {
   // const adminTab = new adminTab()
 
-
-  beforeEach(() => {
-   
-url()                                                //call url function from integration>url-file.spec.js
-
+  before(() => {         //call url function from cypress > fixture> url-file.json
+   navigate()                                        
+    })
+    
+  beforeEach(() => {         //call url function from cypress > fixture> url-file.json
+  redirectToAdminTab()                                         
   })
 
-  it("should  add an admin", () => {
+  it.only("should  add an admin", () => {
+   
     addAdmin ()                                          //add admin from integration > page-object > add-admin.js,1st call addAdmin function
     emailField('bsyedaserish@gmail.com')                 //then call a function for email field (enter email address)  
     roleField()                                           //then call a function that click on dropdown icon of the role field
@@ -23,6 +23,7 @@ url()                                                //call url function from in
     saveButton()                                           //call a function that hit save button
   })
   it('should edit an admin', () => {
+    redirectToAdminTab()
     editAdmin()                                          //edit admin from integration > page-object > add-admin.js,1st call editAdmin function     
     roleField()                                         //then call a function that click on dropdown icon of the role field
     roleselector()                                      //then call a function that select the option from the dropdown
