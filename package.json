@@ -1,7 +1,6 @@
 {
   "name": "admin-roles",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "Cypress run",
@@ -10,10 +9,19 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "cypress": "7.4.0"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "cypress": "^7.4.0",
+    "cypress-localstorage-commands": "^1.4.5",
     "cypress-xpath": "^1.6.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sehrish-bukhari/admin-roles.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sehrish-bukhari/admin-roles/issues"
+  },
+  "homepage": "https://github.com/sehrish-bukhari/admin-roles#readme",
+  "description": ""
 }
