@@ -1,0 +1,16 @@
+# This is a basic workflow to help you get started with Actions
+name : Generate cypress report
+on : [push]
+
+jobs :
+    cypress-run:
+          run-on: docker pull cypress/browsers:node14.16.0-chrome90-ff88
+          steps :
+              - name : Checkout
+                uses : actions/checkout@v2
+              - name: cypress run
+                uses : cypress-io/github-action@v2
+                with :
+                  build : npm run build
+                  start : npm start
+ 
