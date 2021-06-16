@@ -41,7 +41,7 @@ describe("it should automate admin tab page", () => {
   it('should click on add page', () => {
 
     pageTab()
-   // cy.wait(20000)                                      //add page from integration > page-object > add-admin.js,call a function that redirect to the page tab
+    cy.wait(10000)                                      //add page from integration > page-object > add-admin.js,call a function that redirect to the page tab
     addPage()                                         //call the function that click on add page button
     pageName('new page')                             //call a function that enter a page name
     readOnlyFeaturesDropdown()                        //call function the click on the dropdown of read only features 
