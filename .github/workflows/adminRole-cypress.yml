@@ -1,14 +1,22 @@
-name: End-to-end tests
-on: [push]
+name: Cypress test
+on:
+  push:
+    branches:
+      - master
 jobs:
-  cypress-run:
-    runs-on: self-hosted
+  ink-cy-pipeline:
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout source code
         uses: actions/checkout@v2
-
-      - name: Cypress tests
-        uses: ./
+      - name: Install Nodejs
+        uses: actions/setup-node@v1
         with:
-          working-directory: adminRole/cypress
-          build: npx cypress info
+          node-version: 14.15.0
+      - name: Install Packages
+        run: npm install
+      - name: Install Cypress
+        run: npm install cypress@7.5.0
+      
+      - name: Run Cypress
+        run: ./node_modules/.bin/cypress run
