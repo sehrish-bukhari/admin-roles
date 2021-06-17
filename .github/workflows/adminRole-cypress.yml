@@ -7,8 +7,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Cypress tests
-        uses: ./
+       - name: Cypress run
+        uses: cypress-io/github-action@v2
         with:
-          working-directory: adminRole/cypress
-          build: npx cypress info
+          build: npm run build
+          start: npm start
