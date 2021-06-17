@@ -10,5 +10,5 @@ jobs:
       - name: Cypress tests
         uses: ./
         with:
-          working-directory: examples/basic
+          working-directory: adminRole/cypress
           build: npx cypress info
