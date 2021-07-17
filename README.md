@@ -1,4 +1,4 @@
-Add delete and edit admin and pages of ink admin panel
+ Add delete and edit admin and pages of ink admin panel
 Introduction:
 In this project we are doing
 1.	Add an admin
@@ -7,10 +7,12 @@ In this project we are doing
 4.	Add page
 5.	Delete page
 6.	Edit page
+7.	
 Technologies:
 By using
 1.	Cypress
 2.	Xpath
+
 Editor:
 On vs code /*you can use any editor of your own choice that support JS*/
 
@@ -66,5 +68,32 @@ now use .than and make a simple function, passes an argument named data to call 
 use cy.visit that visit the url-file and call url that define at index 0  
 
 ![11](https://user-images.githubusercontent.com/66178942/126042734-f5724a83-7e4a-4e25-be64-03ec993c3364.png)
+
+Now to redirect at admin role tab, make a export function name
+redirectToAdminab
+now to get the link of the admin tab, write npx cypress open at vs code terminal
+
+![12](https://user-images.githubusercontent.com/66178942/126044011-d4797ed7-99b2-4f4e-ad4b-3cf44d59b9dd.png)
+
+A dialog box appears click on the .spec.js file
+ when chrome window appear and redirect to admin panel, just click on open selector playground button straight at the top before search field
+
+
+![13](https://user-images.githubusercontent.com/66178942/126044035-63fedf5c-6155-4b89-baad-912c30b12cf3.png)
+
+After that click on toggle icon, copy the url
+
+![14](https://user-images.githubusercontent.com/66178942/126044058-a193f6a4-e965-404e-a751-8dcf88504c5a.png)
+
+and paste that url in export function
+and again click on toggle icon than click on dashboard, copy the url me paste in export function 
+and again click on toggle icon than click on admin role, copy the url me paste in export function  so our final export function will become
+
+![15](https://user-images.githubusercontent.com/66178942/126044078-ab536be6-5776-433c-b40e-1dc596a4a961.png)
+
+*/ignore the committed lines in the code*/
+*/you can also use Xpath instead of cy.get*/
+*/ you can use timeout where it is need, you can also use other functions of cypress to make the code better*/
+
 
 
