@@ -1,4 +1,4 @@
-###### Add delete and edit admin and pages of ink admin panel
+##### Add delete and edit admin and pages of ink admin panel
 Introduction:
 In this project we are doing
 1.	Add an admin
