@@ -18,5 +18,5 @@ export function redirectToAdminTab() {
     //cy.get('.ps__thumb-y').
      //cy.xpath('//body[1]/div[2]/div[3]/div[1]/div[1]/ul[1]/a[12]',{timeout:700000}).should('be.visible')
     cy.wait(10000)
-    cy.xpath('//body/div[2]/div[3]/div[1]/div[1]/ul[1]/a[11]/span[1]').click({ force: true })
+    cy.get('.jss432 > .MuiListItemText-root-419 > .MuiTypography-root-347').click({ force: true })
 }
