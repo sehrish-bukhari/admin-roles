@@ -59,8 +59,10 @@ Now, go to the navigate-to-page.js file in the page-object folder and import the
 
 ![10](https://user-images.githubusercontent.com/66178942/126042677-bd6ef1d9-cc4b-429f-9122-53c152929a26.png)
 
-now make a simple export function, call fixture folder by typing cy.fixture(‘ ’)write the same file name in the commas that you take in fixture folder without extension, in our case it will become cy.fixture(‘url-file’)
-now use .than and make a simple function ,passes an argument data to call the array index from url-file
+now make a simple export function, call fixture folder by typing cy.fixture(‘ ’), write the same file name without extension in the commas that you take in fixture folder,
+in our case it will become cy.fixture(‘url-file’)
+
+now use .than and make a simple function, passes an argument named data to call the array index from url-file. 
 use cy.visit that visit the url-file and call url that define at index 0  
 
 ![11](https://user-images.githubusercontent.com/66178942/126042734-f5724a83-7e4a-4e25-be64-03ec993c3364.png)
