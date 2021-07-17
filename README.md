@@ -1,5 +1,5 @@
-# Add delete and edit admin and pages of ink admin panel
-Introduction:
+   # Add delete and edit admin and pages of ink admin panel
+ ## Introduction:
 In this project we are doing
 1.	Add an admin
 2.	Edit an admin
@@ -8,15 +8,15 @@ In this project we are doing
 5.	Delete page
 6.	Edit page
 7.	
-Technologies:
+## Technologies:
 By using
 1.	Cypress
 2.	Xpath
 
-Editor:
+## Editor:
 On vs code /*you can use any editor of your own choice that support JS*/
 
-Working:
+## Working:
 On the side bar of vs code, click on CYPRRESS folder and then click on INTEFRATION folder
 
 ![1](https://user-images.githubusercontent.com/66178942/126042231-077fe945-16e9-462a-8575-9ca740ea767c.png)
