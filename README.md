@@ -92,7 +92,9 @@ and again click on toggle icon than click on admin role, copy the url me paste i
 ![15](https://user-images.githubusercontent.com/66178942/126044078-ab536be6-5776-433c-b40e-1dc596a4a961.png)
 
 */ignore the committed lines in the code*/
+
 */you can also use Xpath instead of cy.get*/
+
 */ you can use timeout where it is need, you can also use other functions of cypress to make the code better*/
 
 
