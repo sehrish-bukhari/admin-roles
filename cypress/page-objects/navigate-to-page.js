@@ -16,7 +16,7 @@ export function redirectToAdminTab() {
     cy.get('.MuiIconButton-label-104 > .material-icons').click()
     //cy.scrollTo(0,200)
     //cy.get('.ps__thumb-y').
-    // cy.xpath('//body[1]/div[2]/div[3]/div[1]/div[1]/ul[1]/a[12]',{timeout:700000}).should('be.visible')
-    //cy.wait(10000)
-    cy.xpath('//body[1]/div[2]/div[3]/div[1]/div[1]/ul[1]/a[12]').click({ force: true })
+     //cy.xpath('//body[1]/div[2]/div[3]/div[1]/div[1]/ul[1]/a[12]',{timeout:700000}).should('be.visible')
+    cy.wait(10000)
+    cy.xpath('//body/div[2]/div[3]/div[1]/div[1]/ul[1]/a[11]/span[1]').click({ force: true })
 }

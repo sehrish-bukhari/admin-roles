@@ -1,0 +1,1 @@
+add delete and edit page tab and admin tab of ink admin panel
