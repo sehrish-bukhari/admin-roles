@@ -25,6 +25,7 @@ In the integration folder make a file having name admin-page.spec.js /*you can t
 
 Now, write     /// <reference types ="cypress"/>
 /*add reference of cypress at the top of page*/
+
 ![3](https://user-images.githubusercontent.com/66178942/126042427-745a5be2-2323-43be-95e2-8329d8f6964c.png)
 
 Now make a folder name page-object having file navigate-to-page.js
