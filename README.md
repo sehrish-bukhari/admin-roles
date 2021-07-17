@@ -97,5 +97,36 @@ and again click on toggle icon than click on admin role, copy the url me paste i
 
 */ you can use timeout where it is need, you can also use other functions of cypress to make the code better*/
 
+Now call that navigate export function in  .spec.js file under the describe and before function and import that function at the top too
+
+![16](https://user-images.githubusercontent.com/66178942/126050608-a11d2914-a48e-4770-aceb-c3aa6e0b82a0.png)
+
+Now in command.js file in the support folder save the local storage so it can automatically call local storage before every it
+
+![17](https://user-images.githubusercontent.com/66178942/126050638-4abd5666-e27a-48f4-9b95-39344b2956b1.png)
+
+now make beforeeach function in spec.js file under the describle and call local storage by typing cy.login()
+and then call the redirecToAdminTab export function
+
+![18](https://user-images.githubusercontent.com/66178942/126050661-c44ada8b-dc23-40de-9b13-61e33757dbfa.png)
+
+/*after importing file, all the function of the file automatically add at the top when ever they call*/
+Now in admin-tab.js file make all the testcases of admin tab under the multiple export function 
+
+![19](https://user-images.githubusercontent.com/66178942/126050707-4b436c02-d8ef-4485-a898-237eb84342c7.png)
+
+And call all that function in the .spec.js file and also import that file at the top of .spec.js file
+
+![20](https://user-images.githubusercontent.com/66178942/126050719-ddfd466e-114f-45ae-8e30-7bd9eb8437aa.png)
+
+Now make all the testcases of page tab in page-tab.js file and import all in .spec.js file
+
+![21](https://user-images.githubusercontent.com/66178942/126050744-31238a84-893e-47ee-a5f7-137e72327598.png)
+
+![22](https://user-images.githubusercontent.com/66178942/126050763-fc84f4a8-80ce-4a6a-8c47-26cdadaec8a1.png)
+
+Now run all the testcases and check all the results
+
+![23](https://user-images.githubusercontent.com/66178942/126050793-47edf049-f93d-414b-b7e5-9489901b8060.png)
 
 
